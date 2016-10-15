@@ -1,6 +1,6 @@
-var Menu = require('electron').Menu
+const {Menu} = require('electron')
 
-var template = [
+const template = [
 	{
 		label: 'Edit',
 		submenu: [

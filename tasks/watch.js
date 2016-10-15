@@ -1,7 +1,7 @@
 "use strict";
 
-var gulp = require('gulp')
-var {paths} = require('./utils')
+const gulp = require('gulp')
+const {paths} = require('./utils')
 
 gulp.task('watch', ['angular', 'css'], function() {
 	gulp.watch([paths.css.all], ['css'])

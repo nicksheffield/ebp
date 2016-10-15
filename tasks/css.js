@@ -1,17 +1,17 @@
 "use strict";
 
-var gulp = require('gulp')
-var rename = require('gulp-rename')
-var stylus = require('gulp-stylus')
-var minify = require('gulp-clean-css')
-var autoprefix = require('gulp-autoprefixer')
+const gulp = require('gulp')
+const rename = require('gulp-rename')
+const stylus = require('gulp-stylus')
+const minify = require('gulp-clean-css')
+const autoprefix = require('gulp-autoprefixer')
 
-var filelog = require('gulp-filelog')
+const filelog = require('gulp-filelog')
 
-var {errorHandler, paths} = require('./utils')
+const {errorHandler, paths} = require('./utils')
 
 gulp.task('css', function() {
-	var stream = gulp.src(paths.css.main)
+	const stream = gulp.src(paths.css.main)
 		.pipe(errorHandler())
 		.pipe(stylus())
 		.pipe(autoprefix())

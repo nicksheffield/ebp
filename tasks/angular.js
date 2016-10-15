@@ -1,20 +1,20 @@
 "use strict";
 
-var gulp = require('gulp')
-var order = require('gulp-order')
-var babel = require('gulp-babel')
-var uglify = require('gulp-uglify')
-var concat = require('gulp-concat')
-var addsrc = require('gulp-add-src')
-var annotate = require('gulp-ng-annotate')
-var templateCache = require('gulp-angular-templatecache')
+const gulp = require('gulp')
+const order = require('gulp-order')
+const babel = require('gulp-babel')
+const uglify = require('gulp-uglify')
+const concat = require('gulp-concat')
+const addsrc = require('gulp-add-src')
+const annotate = require('gulp-ng-annotate')
+const templateCache = require('gulp-angular-templatecache')
 
-var filelog = require('gulp-filelog')
+const filelog = require('gulp-filelog')
 
-var {errorHandler, paths} = require('./utils')
+const {errorHandler, paths} = require('./utils')
 
 gulp.task('angular', function() {
-	var stream = gulp.src(paths.angular.views)
+	const stream = gulp.src(paths.angular.views)
 		.pipe(errorHandler())
 		.pipe(templateCache('templates.js', {module: 'app.views'}))
 		.pipe(addsrc(paths.angular.all))
