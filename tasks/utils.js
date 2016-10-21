@@ -6,17 +6,17 @@ const plumber = require('gulp-plumber')
 module.exports = {
 	paths: {
 		css: {
-			all: ['app/style/*.styl', 'app/style/**/*.styl'],
-			main: 'app/style/__main.styl',
+			all: ['app/client/style/*.styl', 'app/client/style/**/*.styl'],
+			main: 'app/client/style/__main.styl',
 			name: 'app.min.css'
 		},
 		angular: {
-			all: ['app/angular/*.js', 'app/angular/**/*.js'],
-			views: ['app/angular/*.html', 'app/angular/**/*.html'],
-			main: 'app/angular/app.js',
+			all: ['app/client/angular/*.js', 'app/client/angular/**/*.js'],
+			views: ['app/client/angular/*.html', 'app/client/angular/**/*.html'],
+			main: 'app/client/angular/app.js',
 			name: 'app.min.js'
 		},
-		output: 'app/client/dist'
+		output: 'app/dist'
 	},
 	errorHandler: function() {
 		return plumber({

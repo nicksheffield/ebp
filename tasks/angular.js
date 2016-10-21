@@ -14,7 +14,7 @@ const {errorHandler, paths} = require('./utils')
 gulp.task('angular', function() {
 	const stream = gulp.src(paths.angular.views)
 		.pipe(errorHandler())
-		.pipe(templateCache('templates.js', {module: 'app.views'}))
+		.pipe(templateCache('t.js', {module: 'app.views'}))
 		.pipe(addsrc(paths.angular.all))
 		.pipe(order([paths.angular.main]))
 		.pipe(babel({ presets: ['es2015'] }))
