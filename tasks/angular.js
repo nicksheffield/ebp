@@ -9,8 +9,6 @@ const addsrc = require('gulp-add-src')
 const annotate = require('gulp-ng-annotate')
 const templateCache = require('gulp-angular-templatecache')
 
-const filelog = require('gulp-filelog')
-
 const {errorHandler, paths} = require('./utils')
 
 gulp.task('angular', function() {

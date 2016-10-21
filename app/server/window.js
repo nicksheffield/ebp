@@ -1,3 +1,5 @@
+"use strict"
+
 const {BrowserWindow} = require('electron')
 
 const window = new BrowserWindow({width: 800, height: 600})

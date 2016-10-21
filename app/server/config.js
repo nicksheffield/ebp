@@ -1,3 +1,5 @@
+"use strict"
+
 const Config = require('electron-config')
 let config = new Config()
 

@@ -1,3 +1,5 @@
+"use strict"
+
 const ipc = require('electron').ipcMain
 
 ipcMain.on('eventOne', function(event, data) {
