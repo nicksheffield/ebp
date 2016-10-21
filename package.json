@@ -1,12 +1,20 @@
 {
   "name": "ebp-dev",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "postinstall": "install-app-deps && bower install",
     "build": "gulp build",
-    "start": "electron ./app"
+    "start": "electron ./app",
+    "dist": "build --x64"
+  },
+  "build": {
+    "appId": "com.ebp",
+    "build.mac.category": "public.app-category.productivity",
+    "mac": {
+      "icon": "build/icon.icns"
+    }
   },
   "keywords": [],
   "author": "Nick Sheffield <numbereft@gmail.com> (http://nicksheffield.me/)",

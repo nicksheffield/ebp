@@ -1,7 +1,10 @@
 {
   "name": "ebp",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "main.js",
+  "author": "Your Name <you@example.com> (http://website.com/)",
+  "description": "Description of your app",
+  "license": "MIT",
   "dependencies": {
     "electron-config": "^0.2.1",
     "lodash": "^4.16.4"
