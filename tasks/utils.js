@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 const notify = require('gulp-notify')
 const plumber = require('gulp-plumber')
@@ -16,7 +16,7 @@ module.exports = {
 			main: 'app/angular/app.js',
 			name: 'app.min.js'
 		},
-		output: 'app/dist'
+		output: 'app/client/dist'
 	},
 	errorHandler: function() {
 		return plumber({
